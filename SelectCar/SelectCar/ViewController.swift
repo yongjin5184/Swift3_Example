@@ -29,8 +29,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         carModel = tesla
         carModelImage = teslaImageNames
         
-        imgView.layer.cornerRadius = 50.0
-        imgView.layer.masksToBounds = true
+        imgView.layer.cornerRadius = 50.0   //라운드 처리
+        imgView.layer.masksToBounds = true // 바운더리 넘어가는 이미지 자르기
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
