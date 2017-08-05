@@ -25,7 +25,22 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         cell.textLabel!.text = dicTemp["지역"]
         
-        cell.detailTextLabel!.text = dicTemp["날씨"]
+        let weatherStr = dicTemp["날씨"]
+        
+        cell.detailTextLabel!.text = weatherStr
+        
+
+        if weatherStr == "맑음"{
+            cell.imageView!.image = UIImage(named : "sunny.png")
+        }else if(weatherStr == "비"){
+            cell.imageView!.image = UIImage(named : "rain.png")
+        }else if(weatherStr == "흐림"){
+            cell.imageView!.image = UIImage(named : "cloudy.png")
+        }else if(weatherStr == "눈"){
+            cell.imageView!.image = UIImage(named : "snow.png")
+        }else{
+            cell.imageView!.image = UIImage(named : "blizzard.png")
+        }
         
         return cell
     }
