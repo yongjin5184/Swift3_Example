@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource {
     
     var datalist:[[String:String]] = [[:]]
    
