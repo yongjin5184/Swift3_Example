@@ -27,6 +27,7 @@
 		EEBB8CEF1F3745EE00B8B7D7 /* vegetable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EEBB8CE11F3745EE00B8B7D7 /* vegetable.jpg */; };
 		EEBB8CF01F3745EE00B8B7D7 /* watermelon.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBB8CE21F3745EE00B8B7D7 /* watermelon.png */; };
 		EEBB8CF21F374D0500B8B7D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB8CF11F374D0500B8B7D7 /* CustomCell.swift */; };
+		EEBB8CF41F37E16A00B8B7D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB8CF31F37E16A00B8B7D7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EEBB8CE11F3745EE00B8B7D7 /* vegetable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable.jpg; sourceTree = "<group>"; };
 		EEBB8CE21F3745EE00B8B7D7 /* watermelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watermelon.png; sourceTree = "<group>"; };
 		EEBB8CF11F374D0500B8B7D7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		EEBB8CF31F37E16A00B8B7D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				EEBB8CC91F37443E00B8B7D7 /* LaunchScreen.storyboard */,
 				EEBB8CCC1F37443E00B8B7D7 /* Info.plist */,
 				EEBB8CF11F374D0500B8B7D7 /* CustomCell.swift */,
+				EEBB8CF31F37E16A00B8B7D7 /* DetailViewController.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				EEBB8CD41F3745AA00B8B7D7 /* MasterViewController.swift in Sources */,
 				EEBB8CF21F374D0500B8B7D7 /* CustomCell.swift in Sources */,
 				EEBB8CC11F37443E00B8B7D7 /* AppDelegate.swift in Sources */,
+				EEBB8CF41F37E16A00B8B7D7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

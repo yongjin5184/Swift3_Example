@@ -57,7 +57,7 @@
                                     <outlet property="imgView" destination="ajR-VP-8b4" id="WWp-aK-sET"/>
                                     <outlet property="nameLabel" destination="fL2-79-HKR" id="JXF-J1-T0r"/>
                                     <outlet property="valueLabel" destination="I67-g3-3ym" id="Ti1-oN-7It"/>
-                                    <segue destination="avA-64-NZd" kind="show" id="2Jw-Ja-d03"/>
+                                    <segue destination="avA-64-NZd" kind="show" identifier="showDetail" id="2Jw-Ja-d03"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="383.65817091454278"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Jh4-U2-81d">
             <objects>
-                <viewController id="avA-64-NZd" sceneMemberID="viewController">
+                <viewController id="avA-64-NZd" customClass="DetailViewController" customModule="CustomCell" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rPC-wn-5qC"/>
                         <viewControllerLayoutGuide type="bottom" id="Xc7-6c-BwE"/>
@@ -83,12 +83,49 @@
                     <view key="view" contentMode="scaleToFill" id="NAk-Ws-Kwm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-4b-0k8">
+                                <rect key="frame" x="-1" y="64" width="376" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qce-O0-Lm2">
+                                <rect key="frame" x="77" y="141" width="230" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH8-YI-95j">
+                                <rect key="frame" x="77" y="392" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q08-uF-e49">
+                                <rect key="frame" x="77" y="482" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdZ-KM-aVL">
+                                <rect key="frame" x="77" y="577" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="q08-uF-e49" id="uwN-pO-WZh"/>
+                        <outlet property="imgView" destination="Qce-O0-Lm2" id="MHk-z9-Fvf"/>
+                        <outlet property="nameLabel" destination="kH8-YI-95j" id="UqT-pt-02a"/>
+                        <outlet property="valueLabel" destination="GdZ-KM-aVL" id="VnI-G7-xjg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vf-jD-VvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="384"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="383.65817091454278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Zp-pY-zdY">
@@ -107,4 +144,7 @@
             <point key="canvasLocation" x="17" y="384"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.jpg" width="1280" height="853"/>
+    </resources>
 </document>

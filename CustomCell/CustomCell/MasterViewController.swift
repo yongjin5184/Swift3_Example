@@ -63,5 +63,11 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            (segue.destination as! DetailViewController).detailData = itemList[(self.tableView.indexPathForSelectedRow)!.row]
+        }
+        
+    }
     
 }
