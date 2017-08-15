@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA6EA6F1F43388700FC19E8 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6EA6E1F43388700FC19E8 /* WeatherCell.swift */; };
 		EEBB8C981F3550D500B8B7D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB8C971F3550D500B8B7D7 /* AppDelegate.swift */; };
 		EEBB8C9A1F3550D500B8B7D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB8C991F3550D500B8B7D7 /* ViewController.swift */; };
 		EEBB8C9D1F3550D500B8B7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBB8C9B1F3550D500B8B7D7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEA6EA6E1F43388700FC19E8 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherCell.swift; path = ../WeatherCell.swift; sourceTree = "<group>"; };
 		EEBB8C941F3550D500B8B7D7 /* WeatherTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBB8C971F3550D500B8B7D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBB8C991F3550D500B8B7D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				EEBB8C971F3550D500B8B7D7 /* AppDelegate.swift */,
 				EEBB8C991F3550D500B8B7D7 /* ViewController.swift */,
 				EEBB8C9B1F3550D500B8B7D7 /* Main.storyboard */,
+				EEA6EA6E1F43388700FC19E8 /* WeatherCell.swift */,
 				EEBB8C9E1F3550D500B8B7D7 /* Assets.xcassets */,
 				EEBB8CA01F3550D500B8B7D7 /* LaunchScreen.storyboard */,
 				EEBB8CA31F3550D500B8B7D7 /* Info.plist */,
@@ -167,6 +170,7 @@
 			files = (
 				EEBB8C9A1F3550D500B8B7D7 /* ViewController.swift in Sources */,
 				EEBB8C981F3550D500B8B7D7 /* AppDelegate.swift in Sources */,
+				EEA6EA6F1F43388700FC19E8 /* WeatherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,7 @@
 				EEBB8CA81F3550D500B8B7D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
